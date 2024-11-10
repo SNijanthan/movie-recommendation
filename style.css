@@ -1,0 +1,214 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+h1 {
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+#appTitle {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: "Sacramento", sans-serif;
+  font-size: 60px;
+  color: #7a1cac;
+}
+
+#genreForm,
+#playBtn {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: "Sacramento", sans-serif;
+}
+
+::placeholder {
+  font-family: "Sacramento", sans-serif;
+}
+
+#movieInfo {
+  width: 50%;
+  margin: 32px auto;
+}
+
+#movieInfo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#moviePoster,
+#movieText {
+  width: 50%;
+  float: left;
+}
+
+img#moviePoster {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+}
+
+#movieText {
+  color: #fefbea;
+  line-height: 1.25;
+}
+
+#movieTitle {
+  font-family: "Doto", sans-serif;
+  color: #ff004d;
+}
+
+#movieTitle,
+#movieOverview {
+  padding-left: 32px;
+}
+
+#movieOverview {
+  font-family: "Poppins", sans-serif;
+  line-height: 35px;
+}
+
+#playBtn {
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #b97828;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+label {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 5px;
+  /* color: #AD49E1; */
+}
+
+select {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+#likeOrDislikeBtns {
+  text-align: center;
+  margin: 0px auto;
+}
+
+#likeBtn,
+#dislikeBtn {
+  padding: 10px 25px;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 15px;
+  border-radius: 12px;
+  border-style: none;
+  cursor: pointer;
+}
+
+#likeBtn {
+  background-color: #249e57;
+  color: rgb(0, 0, 0);
+}
+
+.btns {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #movieInfo {
+    width: 80%; /* Make movie info take up more space on smaller screens */
+  }
+
+  #moviePoster,
+  #movieText {
+    width: 100%; /* Stack the poster and text vertically */
+    float: none; /* Remove float */
+  }
+
+  #movieText {
+    padding-left: 0; /* Remove left padding for smaller screens */
+  }
+
+  #movieTitle,
+  #movieOverview {
+    padding-left: 0; /* Remove left padding for smaller screens */
+  }
+
+  #appTitle {
+    font-size: 36px; /* Smaller font size for smaller screens */
+  }
+
+  select {
+    width: 100%; /* Make select input take up the full width on mobile */
+  }
+
+  #likeBtn,
+  #dislikeBtn {
+    width: 100%; /* Buttons take full width */
+    font-size: 18px; /* Adjust font size for readability */
+  }
+
+  .btns {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+  }
+
+  #playBtn {
+    font-size: 18px; /* Increase font size on smaller screens */
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #appTitle {
+    font-size: 40px; /* Further decrease font size on very small screens */
+  }
+
+  label {
+    font-size: 25px;
+  }
+
+  select {
+    width: 90%;
+  }
+
+  #movieText {
+    width: 100%; /* Movie info takes up full width */
+    margin-left: 5px;
+  }
+
+  #movieOverview {
+    font-size: 14px;
+  }
+
+  img#moviePoster {
+    max-height: 300px; /* Adjust the image height for smaller screens */
+  }
+
+  #playBtn {
+    font-size: 13px; /* Increase font size on smaller screens */
+    padding: 8px 15px;
+  }
+
+  #likeBtn {
+    background-color: #249e57;
+    color: rgb(0, 0, 0);
+    font-size: 13px; /* Increase font size on smaller screens */
+    padding: 8px 15px;
+    margin-top: 10px;
+  }
+
+  #movieTitle {
+    font-size: 30px;
+  }
+}
