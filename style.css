@@ -124,6 +124,10 @@ select {
   display: flex;
 }
 
+::selection {
+  background: rgb(176, 15, 240);
+}
+
 @media (max-width: 768px) {
   #movieInfo {
     width: 80%; /* Make movie info take up more space on smaller screens */
